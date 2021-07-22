@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        div {
+            margin: 320px 150px 100px 180px;
+        }
+    </style>
+
+</head>
+
+<body onload="myFunction()" background="1.png">
+
+<div class="container-fluid"  style="background-color:#D9FFFF;padding:10px;margin-bottom:5px;opacity:0.9";>
+        <blockquote class="blockquote" >
+            <p id="quotes" style="font-size:22px;"></p>
+            <footer id="footers" class="blockquote-reverse"></footer>
+        </blockquote>
+</div>
+</div>
+
+<script>
+var quotes = ["If one advances confidently in the direction of his dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours.", "We first make our habits, and then our habits make us.", "學習語言好比一場馬拉松，而非短跑，耐力才是最重要.","沒錯，我寫了六、七年，現在遇到問題，分析、思考、解決，所產生的成就感，真的很爽","The important work of moving the world forward does not wait to be done by perfect men.","I failed my way to success.","What is working?","Those who chase after honor, honor will run away from them. <br>Those who run away from honor, honor will chase them.","活得精彩","讓我能平靜地接受我不能改變的東西.<br>給予我勇氣去改變我能改變的東西.<br>給我智慧去瞭解這兩者的不同.","讓自己變得更好才是贏得愛情的唯一答案","To dare is to lose one's footing momentarily. Not to dare is to lose oneself.",'冒險令人焦慮，但不冒險令人失去自我。'];
+
+var footers = ["Henry David Thoreau", "John Dryden", "仲韋","Jhen Yang Chen","George Eliot","Thomas Edison","Tai","Tai","2018/04/17","","PTT Catch","Soren Kierkegaard",'索倫․齊克果'];
+
+
+
+function myFunction() {
+    num=Math.floor((Math.random() * quotes.length) );
+    document.getElementById("quotes").innerHTML = quotes[num];
+    document.getElementById("footers").innerHTML = footers[num];
+
+}
+</script>
+</body>
+
+</html>
